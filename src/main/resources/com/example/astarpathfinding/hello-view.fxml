@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="554.0" prefWidth="834.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.astarpathfinding.HelloController">
+   <children>
+      <AnchorPane fx:id="gamePlane" layoutX="1.0" onMouseClicked="#planeClicked" onMouseDragged="#planeDragged" prefHeight="554.0" prefWidth="609.0" />
+      <TextField fx:id="gridSizeInput" layoutX="662.0" layoutY="23.0" text="25" />
+      <Button layoutX="774.0" layoutY="66.0" mnemonicParsing="false" onAction="#clearPlane" text="Clear" />
+      <ComboBox fx:id="RolePicker" layoutX="661.0" layoutY="109.0" prefHeight="26.0" prefWidth="150.0" />
+      <Button layoutX="768.0" layoutY="157.0" mnemonicParsing="false" onAction="#run_A_star_algo_showcase" text="FindPath" />
+      <Button layoutX="770.0" layoutY="193.0" mnemonicParsing="false" onAction="#showHeuristic" text="Show H" />
+      <ProgressBar fx:id="energy_bar" layoutX="657.0" layoutY="383.0" prefHeight="41.0" prefWidth="158.0" progress="1.0" style="-fx-accent: yellow;" />
+      <Label fx:id="energy_bar_percentage" layoutX="711.0" layoutY="340.0" prefHeight="42.0" prefWidth="114.0" text="100" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Agency FB" size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="energy_bar_percentage1" layoutX="745.0" layoutY="340.0" prefHeight="42.0" prefWidth="101.0" text="\%" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Agency FB" size="29.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

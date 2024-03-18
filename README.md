@@ -1,1 +1,2 @@
-# A-_PathFinder
+# Pathfinding tool build in JavaFX
+
